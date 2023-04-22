@@ -14,6 +14,10 @@
             implementation="gov.iti.jets.service.soap.CityService"
             url-pattern="/sakila/city" />
     <endpoint
+            name="CustomerService"
+            implementation="gov.iti.jets.service.soap.CustomerService"
+            url-pattern="/sakila/customer" />
+    <endpoint
             name="CategoryService"
             implementation="gov.iti.jets.service.soap.CategoryService"
             url-pattern="/sakila/category" />
@@ -43,8 +47,5 @@
             name="StoreService"
             implementation="gov.iti.jets.service.soap.StoreService"
             url-pattern="/sakila/store" />
-    <!-- <endpoint
-            name="CustomerService"
-            implementation="gov.iti.jets.service.soap.CustomerService"
-            url-pattern="/sakila/customer" /> -->
+
 </endpoints>

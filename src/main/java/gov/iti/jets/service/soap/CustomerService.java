@@ -1,53 +1,53 @@
 package gov.iti.jets.service.soap;
 
 import gov.iti.jets.persistence.repository.CustomerRepository;
-import gov.iti.jets.persistence.repository.FilmRepository;
 import gov.iti.jets.service.dto.CustomerDto;
-import gov.iti.jets.service.dto.FilmDto;
 import gov.iti.jets.service.dto.PaymentDto;
 import gov.iti.jets.service.dto.RentalDto;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
+import jakarta.jws.WebService;
 
 import java.util.List;
 
+@WebService
 public class CustomerService {
     private CustomerRepository customerRepository = new  CustomerRepository();
 
     @WebMethod(operationName = "FindgetCustomerById")
-    CustomerDto getCustomerById(@WebParam(name = "customerId") int id) {
+    public CustomerDto getCustomerById(@WebParam(name = "customerId") int id) {
         return customerRepository.getCustomerById(id);
     }
     @WebMethod(operationName = "GetAllCustomers")
-    List<CustomerDto> getAllCustomers() {
+    public List<CustomerDto> getAllCustomers() {
         return customerRepository.getAllCustomers();
     }
     @WebMethod(operationName = "DeleteFilm")
-    Boolean addCustomer(@WebParam(name = "customerDto")CustomerDto customerDto) {
+    public Boolean addCustomer(@WebParam(name = "customerDto")CustomerDto customerDto) {
         return customerRepository.addCustomer(customerDto);
     }
     @WebMethod(operationName = "FindAllFilms")
-    List<CustomerDto> getCustomersByName(@WebParam(name = "customerName")String name){
+    public List<CustomerDto> getCustomersByName(@WebParam(name = "customerName")String name){
         return customerRepository.getCustomersByName(name);
     }
 
     @WebMethod(operationName = "FindCustomerRentalById")
-    List<RentalDto> getCustomerRentalById(@WebParam(name = "customerId")int id){
+    public List<RentalDto> getCustomerRentalById(@WebParam(name = "customerId")int id){
         return customerRepository.getCustomerRentalById(id);
     }
 
     @WebMethod(operationName = "FindAllFilms")
-    List<PaymentDto> getCustomerPaymentById(@WebParam(name = "customerId")int id){
+    public List<PaymentDto> getCustomerPaymentById(@WebParam(name = "customerId")int id){
         return customerRepository.getCustomerPaymentById(id);
     }
 
     @WebMethod(operationName = "FindAllActiveCustomers")
-    List<CustomerDto> getAllActiveCustomers(){
+    public List<CustomerDto> getAllActiveCustomers(){
         return customerRepository.getAllActiveCustomers();
     }
 
     @WebMethod(operationName = "FindAllInactiveCustomers")
-    List<CustomerDto> getAllInactiveCustomers() {
+    public List<CustomerDto> getAllInactiveCustomers() {
         return customerRepository.getAllInactiveCustomers();
     }
 }
