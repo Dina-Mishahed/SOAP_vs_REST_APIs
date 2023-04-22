@@ -21,4 +21,19 @@ public class StaffRepository implements StaffDao {
     public List<StaffDto> getAllStaff() {
         return staffDao.getAllStaff();
     }
+
+    @Override
+    public boolean addStaff(StaffDto staffDto) {
+        return staffDao.addStaff(staffDto);
+    }
+
+    @Override
+    public boolean editStaff(Short staffId, StaffDto staffDto) {
+        return staffDao.editStaff(staffId,staffDto);
+    }
+
+    @Override
+    public Boolean deleteStaff(int id) {
+        return staffDao.deleteStaff(id);
+    }
 }

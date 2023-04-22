@@ -1,7 +1,6 @@
 package gov.iti.jets.persistence.daoImp;
 
 import gov.iti.jets.persistence.dao.PaymentDao;
-import gov.iti.jets.persistence.entity.Address;
 import gov.iti.jets.persistence.entity.Payment;
 import gov.iti.jets.service.dto.PaymentDto;
 import gov.iti.jets.service.mapper.PaymentMapper;

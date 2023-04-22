@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface StoreDao {
     StoreDto getStoreById(Short id);
-//    void addStore(int managerStaffId,int addressId)
+    void addStore(int managerStaffId,int addressId);
     Boolean editStore(StoreDto storeDto);
     List<InventoryDto> getInventoryListByStore(int id);
     StaffDto getManagerStaff(int storeId);
@@ -14,5 +14,6 @@ public interface StoreDao {
     List<CustomerDto> getCustomerListByStore(int id);
 
     List<StoreDto> getAllStores();
+    public Boolean deleteStore(int id);
 
 }

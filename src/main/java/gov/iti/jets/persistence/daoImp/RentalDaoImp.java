@@ -1,12 +1,8 @@
 package gov.iti.jets.persistence.daoImp;
 
 import gov.iti.jets.persistence.dao.RentalDao;
-import gov.iti.jets.persistence.entity.City;
 import gov.iti.jets.persistence.entity.Rental;
-import gov.iti.jets.service.dto.CityDto;
 import gov.iti.jets.service.dto.RentalDto;
-import gov.iti.jets.service.mapper.CityMapper;
-import gov.iti.jets.service.mapper.LanguageMapper;
 import gov.iti.jets.service.mapper.RentalMapper;
 import org.mapstruct.factory.Mappers;
 

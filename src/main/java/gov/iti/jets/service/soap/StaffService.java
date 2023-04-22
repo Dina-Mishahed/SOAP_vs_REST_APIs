@@ -20,4 +20,22 @@ public class StaffService {
     public List<StaffDto> getAllStaff() {
         return staffRepository.getAllStaff();
     }
+
+    @WebMethod(operationName = "AddStaff")
+    public boolean addStaff(@WebParam(name = "staffDto") StaffDto staffDto) {
+        return staffRepository.addStaff(staffDto);
+    }
+
+
+    @WebMethod(operationName = "UpdateStaff")
+    public boolean editStaff(@WebParam(name = "staffId")Short staffId,@WebParam(name = "staffDto") StaffDto staffDto)
+    {
+        return staffRepository.editStaff(staffId,staffDto);
+    }
+
+    @WebMethod(operationName = "DeleteStaff")
+    public Boolean deleteStaff(@WebParam(name = "staffId")int id)
+    {
+        return staffRepository.deleteStaff(id);
+    }
 }

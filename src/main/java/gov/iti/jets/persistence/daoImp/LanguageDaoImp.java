@@ -1,12 +1,8 @@
 package gov.iti.jets.persistence.daoImp;
 
 import gov.iti.jets.persistence.dao.LanguageDao;
-import gov.iti.jets.persistence.entity.City;
 import gov.iti.jets.persistence.entity.Language;
-import gov.iti.jets.persistence.entity.Language_;
-import gov.iti.jets.service.dto.CityDto;
 import gov.iti.jets.service.dto.LanguageDto;
-import gov.iti.jets.service.mapper.CityMapper;
 import gov.iti.jets.service.mapper.LanguageMapper;
 import org.mapstruct.factory.Mappers;
 

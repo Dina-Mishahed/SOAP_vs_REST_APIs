@@ -21,6 +21,11 @@ public class  StoreRepository implements StoreDao {
     }
 
     @Override
+    public void addStore(int managerStaffId, int addressId) {
+        storeDao.addStore(managerStaffId,addressId);
+    }
+
+    @Override
     public Boolean editStore(StoreDto storeDto) {
         return storeDao.editStore(storeDto);
     }
@@ -43,5 +48,10 @@ public class  StoreRepository implements StoreDao {
     @Override
     public List<StoreDto> getAllStores() {
         return storeDao.getAllStores();
+    }
+
+    @Override
+    public Boolean deleteStore(int id) {
+        return storeDao.deleteStore(id);
     }
 }

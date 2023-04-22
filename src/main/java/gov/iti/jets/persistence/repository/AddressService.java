@@ -20,4 +20,19 @@ public class AddressService implements AddressDao {
     public List<AddressDto> getAllAddress() {
         return addressDao.getAllAddress();
     }
+
+    @Override
+    public Boolean updateAddress(AddressDto addressDto) {
+        return null;
+    }
+
+    @Override
+    public Boolean addAddress(AddressDto addressDto) {
+        return null;
+    }
+
+    @Override
+    public AddressDto getAddresByPostalCode(String postalCode) {
+        return null;
+    }
 }
