@@ -4,6 +4,28 @@ The Sakila SOAP API is a web service that provides access to the Sakila database
 ## Documentation
 [SOAP UI](soapui-project.xml)
 ## Installation
+* Clone the project
+
+```
+    git clone https://github.com/Dina-Mishahed/Sakila_Soap_API.git
+```
+### MySQL
+* Download the Sakila Database from this link:
+```
+    https://www.sqliz.com/sakila/installation/ 
+```
+* Create a database schema and provide the username and password in the persistence.xml
+
+* Go to the project directory
+```
+    cd Sakila_Soap_API
+```
+* Change the configuration of Tomcat in pom.xml.
+* Run your tomcat apache server and then change the configuration of tomcat in pom.xml.
+* Finally, deploy the application using the following maven command.
+```
+mvn clean package tomcat7:deploy
+```
 ## Technologies Used
 * JAX-WS
 * Maven
