@@ -38,3 +38,16 @@ mvn clean package tomcat7:deploy
 * JAX-B
 * MapStruct
 * PostMan
+
+## Endpoints
+
+* `/sakila/actor`: Actor web service
+* `/sakila/category`: Category web service
+* `/sakila/payment`: Payment web service
+* `/sakila/rental`: Rental web service
+* `/sakila/inventory`: Inventory web service
+* `/sakila/actor`: Customer web service
+* `/sakila/address`: Address web service
+* `/sakila/film`: Film web service
+* `/sakila/staff`: Staff web service
+* `/sakila/store`: Store web service
